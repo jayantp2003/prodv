@@ -1,0 +1,42 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
+  
+  .calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    font-size: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .calendar-container {
+      font-size: 0.75em;
+    }
+  }
+  
+  .dark-mode .calendar-container {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .rbc-calendar .rbc-header,
+  .dark-mode .rbc-calendar .rbc-month-view .rbc-day-bg {
+    background-color: #444;
+  }
+  
+  .dark-mode .rbc-calendar .rbc-month-view .rbc-date-cell{
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .dark-mode .rbc-calendar .rbc-month-view .rbc-date-cell .rbc-now .rbc-current{
+    background-color: #968f8f;
+  }
+
